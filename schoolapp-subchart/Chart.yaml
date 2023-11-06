@@ -12,5 +12,5 @@ dependencies:
   version: 0.5.8
   repository: https://gitlab.com/api/v4/projects/34240616/packages/helm/stable
 - name: mongodb
-  version: 11.1.1
+  version: 14.1.1
   repository: https://charts.bitnami.com/bitnami
