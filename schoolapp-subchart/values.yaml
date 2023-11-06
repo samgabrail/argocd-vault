@@ -1,0 +1,13 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+mongodb:
+  auth:
+    enabled: true
+    rootUser: 'schoolapp'
+    rootPassword: 'mongoRootPass'
+
+schoolapp-api:
+  vault:
+    status: 'disabled'
+    kind: 'disabled'

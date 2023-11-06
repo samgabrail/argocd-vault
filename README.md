@@ -45,6 +45,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 Wait until all the pods are running
 
 ```bash
+kubens argocd
 watch kubectl get po
 ```
 
@@ -88,6 +89,8 @@ kubectl delete ns schoolapp
 ```bash
 kubectl apply -f argocdSchoolApp.yaml
 ```
+
+Now click on Sync inside the ArgoCD UI to sync the changes to the live cluster.
 
 ## Test the School App with ArgoCD
 

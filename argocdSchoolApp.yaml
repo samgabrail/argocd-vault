@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: schoolapp
+  namespace: argocd
+spec:
+  destination:
+    namespace: schoolapp
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: schoolapp-subchart
+    repoURL: 'https://github.com/samgabrail/argocd-vault.git'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
